@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./server.js",
+    "start": "node ./server.js"
   },
   "keywords": [
     "workout",
@@ -14,10 +15,16 @@
   "author": "Kombinator",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "prettier": "^2.8.4"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.21",
+    "pg": "^8.10.0",
+    "prettier": "^2.8.4",
+    "prisma": "^4.11.0"
   },
   "devDependencies": {
+    "@prisma/client": "^4.11.0",
     "colors": "^1.4.0"
   }
 }
